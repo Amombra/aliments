@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>Login Register</title>
+<title>Register </title>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min1.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<style type="text/css">
+	
+	html{
+		padding: 50px;
+	}
+
+	body
+		{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			background: url('/img/bg.png') no-repeat;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+  <div>
+    <a href="/" class="btn btn-primary ml-3">Home</a>  
+    <a href="/add" class="btn btn-secondary ml-3">New Customer</a> 
+    <a href="/index2" class="btn btn-info ml-3">Customer List</a>
+</div>    
+
+<% if (messages.success) { %>
+  <p class="alert alert-success mt-4"><%- messages.success %></p>
+<% } %>  
+<br>
+  <table class="table">
+<thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">categorie_produit</th>
+    <th scope="col">nom_produit</th>
+    <th scope="col">prix</th>
+    <th scope="col">localite_prod</th>
+    <th scope="col">email_marchand</th>
+
+    <th width="200px">Action</th>
+ 
+  </tr>
+</thead>
+<tbody>
+    
+
+
+  
+      <a class="btn btn-success edit" href="/edit/<%=data[i].id%>">Edit</a>                       
+      <a class="btn btn-danger delete" onclick="return alert('Are You sure?')" href="/delete/<%=data[i].id%>">Delete</a>                       
+     </td>
+    </tr>
+     
+</tbody>
+</table>
+</body>
+</html>

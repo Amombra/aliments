@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min1.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+</head>
+
+<style type="text/css">
+	
+	html{
+		padding: 50px;
+	}
+
+	body
+		{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			background: url('/img/bg.png') no-repeat;
+			background-size: cover;
+		}
+	</style>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-2"></div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+
+
+            
+<form action="/index2" method="post" name="form1" class="card chic">
+<div class="form-group">
+  <label for="">Catégories du Produit</label>
+  <input type="text" name="categorie_produit" class="form-control" id="categorie_produit" placeholder="Enter Entrez la catégorie du produitl" value="">
+</div>
+
+<div class="form-group">
+  <label for="">Nom du produit</label>
+  <input type="text" name="nom_produit" class="form-control" id="nom_produit"  placeholder="Entrez le nom du produit" value="">
+</div>
+
+<div class="form-group">
+  <label for="">Prix/Kg</label>
+    <input type="number" name="prix" id="prix" class="form-control" placeholder="Veuillez le prix du produit">
+</div>
+
+<div class="form-group">
+  <label for="">Localisation du produits</label>
+  <input type="text" name="localite_prod" class="form-control" id="localite_prod" placeholder="Enter le secteur dans lequel se trouve le produit" value="">
+</div>
+
+<div class="form-group">
+  <label for="">Email du Marchandt</label>
+  <input type="email" name="email_marchand" class="form-control" id="email_marchand" placeholder="Entrer votre email" value="">
+</div>
+
+
+ 
+<input type="submit" class="btn btn-primary" value="Add">
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>

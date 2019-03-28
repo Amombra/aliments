@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ANGELIC BIO</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	
+        <h1 class="text-logo"><span class="glyphicon glyphicon-cutlery"></span> Angelic-Bio <span class="glyphicon glyphicon-cutlery"></span></h1>
+         <div class="container admin">
+            <div class="row">
+                <h1><strong>Ajouter un produit [ADMIN]</strong></h1>
+                <br>
+                <form class="form" action="/list_produits" role="form" method="post">
+                    <div class="form-group">
+                        <label for="categorie_produit_acc">Catégories du Produit:</label>
+                        <input type="text" class="form-control" id="categorie_produit_acc" name="categorie_produit_acc" placeholder="Categorie de produits" value="">
+                        <span class="help-inline"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="nom_produit_acc">Nom du produit:</label>
+                        <input type="text" class="form-control" id="nom_produit_acc" name="nom_produit_acc" placeholder="nom du produit" value="">
+                        <span class="help-inline"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="prix_acc">Prix: (en CFA)</label>
+                        <input type="number" step="100" class="form-control" id="prix_acc" name="prix_acc" placeholder="Prix" value="">
+                        <span class="help-inline"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="localite_prod_acc">Localité || Quartier (où se trouve le produit)</label>
+                        <input type="text"  class="form-control" id="localite_prod_acc" name="localite_prod_acc" placeholder="Localité où se trouve le produit" value="">
+                        <span class="help-inline"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email_marchand_acc">Email du marchand</label>
+                        <input type="email"  class="form-control" id="email_marchand_acc" name="email_marchand_acc" placeholder="Email du marchand" value="">
+                        <span class="help-inline"></span>
+                    </div>
+                    <br>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span> Ajouter</button>
+                        <a class="btn btn-primary" href="/list_produits"><span class="glyphicon glyphicon-arrow-left"></span> Retour</a>
+                   </div>
+                </form>
+            </div>
+        </div>   
+    </body>
+</html>

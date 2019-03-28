@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customers</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<form action="" method="post" name="form1">
+
+  <div class="form-group">
+    <label for="">Catégories du Produit</label>
+    <input type="text" name="categorie_produit" class="form-control" id="categorie_produit" value="<%= categorie_produit %>" placeholder="Enter Entrez la catégorie du produitl">
+  </div>
+  
+  <div class="form-group">
+    <label for="">Nom du produit</label>
+    <input type="text" name="nom_produit" class="form-control" id="nom_produit"  placeholder="Entrez le nom du produit" value="<%= nom_produit %>">
+  </div>
+  
+  <div class="form-group">
+    <label for="">Prix</label>
+      <input type="text" name="prix" id="prix" class="form-control" placeholder="Veuillez le prix du produit" value="<%= prix %>">
+  </div>
+  
+  <div class="form-group">
+    <label for="">Localisation du produits</label>
+    <input type="text" name="localite_prod" class="form-control" id="localite_prod" placeholder="Enter le secteur dans lequel se trouve le produit" value="<%= localite_prod %>">
+  </div>
+  
+  <div class="form-group">
+    <label for="">Email du Marchandt</label>
+    <input type="email" name="email_marchand" class="form-control" id="email_marchand" placeholder="Entrer votre email" value="<%= email_marchand %>">
+  </div>
+  
+  
+   
+  <input type="submit" class="btn btn-primary" value="Add">
+</form>
+</body>
+</html>
